@@ -20,7 +20,7 @@ f = open('info.txt','a')
 num = 0
 for i in range(10):
 	data = i + 1
-	url = 'https://github.com/search?p='+bytes(data)+'&q=BGY&type=Repositories'
+	url = 'https://github.com/search?p='+bytes(data)+'&q=要查询的字母&type=Repositories'
 	print(url)
 	head = {'User-Agent':'Mozilla/5.0 (Windows NT 10.0; …) Gecko/20100101 Firefox/61.0'}
 	htmls = requests.get(url,headers = head,proxies=proxy)
